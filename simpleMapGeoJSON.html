@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -29,22 +30,20 @@ basemap tiles -->
 					                                                                                                      'Imagery © <a href="http://mapbox.com">Mapbox</a>',
                     id: 'mapbox.streets'
                 }).addTo(mymap);
-			// create a geoJSON feature -  
-			var geojsonFeature = {      
-			  "type": "Feature",      
-			  "properties": {         
- 			    "name": "London",          
-				"popupContent": "This is where UCL is based"      
+			 //create a geoJSON feature -
+			 var geojsonFeature = {      
+			   "type": "Feature",      
+			   "properties": {          
+			     "name": "London",          
+				 "popupContent": "This is where UCL is based"      
 			   },      
 			   "geometry": {          
 			     "type": "Point",          
-				 "coordinates": [-0.118092, 51.509865]      
-				}  
-			};  
-			// and add it to the map  
-			L.geoJSON(geojsonFeature).addTo(mymap).bindPopup("<b>"+geojsonFeature.properties.name+" 
-"+geojsonFeature.properties.popupContent+"<b>"); 
- 
-   </script>
+				 "coordinates": [-0.134040, 51.524559]      
+			   }  
+			 };  
+			 // and add it to the map  
+			 L.geoJSON(geojsonFeature).addTo(mymap).bindPopup("<b>"+geojsonFeature.properties.name+" "+geojsonFeature.properties.popupContent+"<b>");
+			</script>
  </body>
  </html>
